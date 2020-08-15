@@ -6,6 +6,7 @@ namespace BankAccount_Tutorial
     {
         static void Main(string[] args)
         {
+            // Calling the 'BankAccount' constructor created in BankAccount.cs
             var account = new BankAccount("Dave Davison", 1000);
             Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial ballance.");
         }

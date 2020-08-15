@@ -1,0 +1,12 @@
+/Users/andybyers/Developer/BankAccount Tutorial/bin/Debug/netcoreapp3.1/BankAccount Tutorial.deps.json
+/Users/andybyers/Developer/BankAccount Tutorial/bin/Debug/netcoreapp3.1/BankAccount Tutorial.runtimeconfig.json
+/Users/andybyers/Developer/BankAccount Tutorial/bin/Debug/netcoreapp3.1/BankAccount Tutorial.runtimeconfig.dev.json
+/Users/andybyers/Developer/BankAccount Tutorial/bin/Debug/netcoreapp3.1/BankAccount Tutorial.dll
+/Users/andybyers/Developer/BankAccount Tutorial/bin/Debug/netcoreapp3.1/BankAccount Tutorial.pdb
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.csprojAssemblyReference.cache
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.AssemblyInfoInputs.cache
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.AssemblyInfo.cs
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.csproj.CoreCompileInputs.cache
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.dll
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.pdb
+/Users/andybyers/Developer/BankAccount Tutorial/obj/Debug/netcoreapp3.1/BankAccount Tutorial.genruntimeconfig.cache

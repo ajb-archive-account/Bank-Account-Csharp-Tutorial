@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BankAccount Tutorial/1.0.0": {
+        "runtime": {
+          "BankAccount Tutorial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BankAccount Tutorial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
