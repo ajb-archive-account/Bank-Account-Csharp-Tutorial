@@ -13,33 +13,30 @@ namespace BankAccount_Tutorial
         private static int accountNumberSeed = 10000001; // private members can only be accessed by the code within the class ('BankAccount' in this case).
         public string Number { get; } // public members can be exposed outside of the class.
         public string Owner { get; set; }
-        public decimal balance = 0;
         public decimal Balance
         // compute the balance when a user asks for a value. Calculate all transactions and give user the value.
         {
             get
             {
+                decimal balance = 0;
                 foreach (var item in allTransactions)
                 {
                     balance += item.Amount;
                 }
-
                 return balance;
             }
-            set
-            {
-                balance = value;
-            }
+            
         }
 
         // Implementing a bank account, this is a constructor that initializes the objects of this account, name and initialBalance.
         public BankAccount(string name, decimal initialBalance)
         {
-            this.Owner = name;
-            this.Balance = initialBalance;
+            // this.Balance = initialBalance; // Remove this of it wikll compute the balance twice.
             this.Number = accountNumberSeed.ToString();
             accountNumberSeed++;
 
+            this.Owner = name;
+            MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
         }
         // Constructors are called when you create an object using 'new'.
 
@@ -47,15 +44,29 @@ namespace BankAccount_Tutorial
         private List<Transaction> allTransactions = new List<Transaction>();
 
         // The following two methods are enforce the rules that a balance must be positive and withdrawls must not create a negative value.
+        // Methods are blocks of code that perform a single function.
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
-
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+            }
+            var deposit = new Transaction(amount, date, note);
+            allTransactions.Add(deposit);
         }
 
         public void MakeWithdrawal(decimal amount, DateTime date, string note)
         {
-
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive"); // 'throw' an exception. Execution ends.
+            }
+            if (Balance - amount < 0)
+            {
+                throw new InvalidOperationException("Not sufficient funds for this withdrawal");
+            }
+            var withdrawal = new Transaction(-amount, date, note);
+            allTransactions.Add(withdrawal);
         }
-        // The above are methods, blocks of code that perform a single function.
     }
 }
