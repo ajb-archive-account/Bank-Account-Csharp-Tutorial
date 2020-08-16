@@ -8,4 +8,4 @@ Carrying out the Microsoft Bank Account C# beginner tutorial. The bank account s
 6. The initial balance must be positive.
 7. Withdrawals cannot result in a negative balance.
 
-- Heavily annotated!
+- **Heavily annotated in the annotated branch**
